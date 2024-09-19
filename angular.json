@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Tp_SalaDeJuegos": {
+    "tp-sala-de-juegos": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Tp_SalaDeJuegos:build:production"
+              "buildTarget": "tp-sala-de-juegos:build:production"
             },
             "development": {
-              "buildTarget": "Tp_SalaDeJuegos:build:development"
+              "buildTarget": "tp-sala-de-juegos:build:development"
             }
           },
           "defaultConfiguration": "development"

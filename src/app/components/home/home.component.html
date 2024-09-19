@@ -1,0 +1,29 @@
+<div class="home-container">
+  <!-- muestra el boton solo cuando este logeado-->
+  <div *ngIf="!userService.isLoggedIn()" class="header">
+    <button routerLink="/login">Login</button>
+    <button routerLink="/register">Registrarse</button>
+  </div>
+
+  <!-- barra que muestra el menu -->
+  <div *ngIf="userService.isLoggedIn()" class="sidebar-container">
+    <button class="menu-btn" (click)="toggleSidebar()">☰ Menú</button>
+
+    <!-- barra lateral -->
+    <div *ngIf="isSidebarVisible" class="sidebar">
+      <ul>
+        <li><a routerLink="/about-me">Quién Soy</a></li>
+        <li><a routerLink="/juegos">Juegos</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div *ngIf="userService.isLoggedIn()" class="header">
+    <button (click)="logout()">Cerrar Sesión</button>
+  </div>
+
+  <div class="content">
+    <h1>Bienvenidos a la Sala de Juegos</h1>
+    <p>Disfruta de los mejores juegos y desafía tus habilidades.</p>
+  </div>
+</div>

@@ -1,0 +1,1 @@
+export const environmentConfig = {"projectId":"tp-saladejuegos-78bb2","appId":"1:415244318929:web:349bb19f311a8b42cb6df0","storageBucket":"tp-saladejuegos-78bb2.appspot.com","apiKey":"AIzaSyBUi5M2YrzeTU9AsMpLGr39M6Ts1h2N1KY","authDomain":"tp-saladejuegos-78bb2.firebaseapp.com","messagingSenderId":"415244318929"};
